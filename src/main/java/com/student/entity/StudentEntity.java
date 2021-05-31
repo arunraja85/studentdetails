@@ -26,8 +26,8 @@ import lombok.NoArgsConstructor;
 public class StudentEntity {
 
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
-	@Column
+	@GeneratedValue(strategy=GenerationType.SEQUENCE)
+	@Column(name="id")
 	private int id;
 	
 	@Column(name="firstName")
